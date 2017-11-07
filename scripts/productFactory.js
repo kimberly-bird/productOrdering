@@ -11,7 +11,7 @@ const idMaker = function* (startFrom = 0) {
 
 const idGenerator = idMaker()
 
-const productFactory = (title, description, price, quantity, image) => {
+const productFactory = (title, description, price, quantity, image, reviews) => {
     return Object.create (null, {
         "id": {
             value: idGenerator.next().value,
@@ -33,7 +33,7 @@ const productFactory = (title, description, price, quantity, image) => {
             value: image
         },
         "reviews": {
-            value: []
+            value: reviews
         }
     })
 }

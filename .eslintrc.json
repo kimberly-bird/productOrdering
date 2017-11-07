@@ -24,7 +24,9 @@
         "semi": [
             "error",
             "never"
-        ]
+        ],
+        "no-unused-vars": 0,
+        "no-console": 0
     },
     "globals": {
         "debugger": true
