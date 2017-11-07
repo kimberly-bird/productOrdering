@@ -2,6 +2,7 @@ const updateDom = require("./productController")
 const addReview = require("./productReviewController")
 const productFactory = require("./productFactory")
 const reviewFactory = require("./productReviewFactory")
+const displayNav = require("./navigation")
 
 // products
 const shoesProduct = productFactory("shoes", "blue shoes", "$4.00", 50, "blueshoe.jpg", reviewFactory.shoeArray)
